@@ -26,7 +26,7 @@ Other requirements: tensorboardX and tqdm are also required for logging and disp
 There is a full list of packages from ```$ pip freeze``` from the two conda environments to help in case of package clashes.
 
 ## Data
-Download the [preprocessed dataset](https://drive.google.com/file/d/1-UIChls1Z1rof3HI_k0qxrnVCy0gVqvU/view?usp=share_link)
+Download the [preprocessed dataset](https://drive.google.com/file/d/1l715iYVktwi8WFs_eOAvoVWS2pPzYiDJ/view?usp=share_link)
 from here. Unzip the zip file, and move the contents to be inside the ```data``` folder.
 
 The expected file structure after this step is:
