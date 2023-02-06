@@ -74,9 +74,15 @@ Script named ```run_test.sh``` is provided to facilitate evaluation. You need to
 3. ```run_num```
 4. ```model_name```
 
-Run number and model name are used to locate the trained model can be found from the logs.  
+Run number and model name are used to locate the trained model can be found from the logs. Note, the model name
+is just the model file's name, not the full path to it. The test script automatically loads the correct model based
+on the ```run_num``` parameter.  
 To run the evaluation script on GPU 0, do the following:
 
 ```bash
 bash run_test.sh 0
 ```
+
+The script will display the MAE metric and will save the predictions in ```outputs/predictions/run_<run_number>/pred_true.npz```.
+A metric calculation script is also provided in ```outputs/predictions``` that takes a file in the format saved by this script and
+computes the metrics.
