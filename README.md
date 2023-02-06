@@ -74,4 +74,9 @@ Script named ```run_test.sh``` is provided to facilitate evaluation. You need to
 3. ```run_num```
 4. ```model_name```
 
-Run number and model name are used to locate the trained model can be found from the logs.
+Run number and model name are used to locate the trained model can be found from the logs.  
+To run the evaluation script on GPU 0, do the following:
+
+```bash
+bash run_test.sh 0
+```
